@@ -1,0 +1,19 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+#Package
+
+db.sqlite3
+geckodriver.log
+geckodriver.exe
+
+# Environments
+
+virtualenv/
+
+
+#Folders
+
+*.sublime-workspace

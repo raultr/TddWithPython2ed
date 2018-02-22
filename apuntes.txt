@@ -1,0 +1,2 @@
+- Para manejar los comandos de django desde sublime instale el paquete Django Manage Commands 
+- Para integrar git a sublime se instalo el paquete Git
