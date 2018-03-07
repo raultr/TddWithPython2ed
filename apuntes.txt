@@ -1,2 +1,6 @@
 - Para manejar los comandos de django desde sublime instale el paquete Django Manage Commands 
 - Para integrar git a sublime se instalo el paquete Git
+
+Si marca un error DJANGO_SETTINGS_MODULE hay que ejecutar el siguiente comando:
+
+	export DJANGO_SETTINGS_MODULE=superlists.settings
