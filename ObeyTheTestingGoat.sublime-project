@@ -3,24 +3,16 @@
 	[
 		{
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "Anaconda Python Builder Windows",
+			"name": "Anaconda Python Builder",
 			"selector": "source.python",
 			"shell_cmd": "\"python\" -u \"$file\""
-		},
-
-		{
-			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "Anaconda Python Builder Linux",
-			"selector": "source.python",
-			"shell_cmd": "\"/usr/bin/python3\" -u \"$file\""
 		}
 	],
-
 	"folders":
 	[
 		{
 			"path": "."
 		}
 	],
-	"virtualenv": "/home/raultr/Cursos/TddWithPython2ed/virtualenv"
+	"virtualenv": "C:\\Users\\raul.torres\\Documents\\RespaldoDocumentos\\Cursos\\ObeyTheTestingGoat\\virtualenv"
 }
