@@ -17,3 +17,4 @@ virtualenv/
 #Folders
 
 *.sublime-workspace
+/static
