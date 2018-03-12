@@ -12,7 +12,7 @@ geckodriver.exe
 # Environments
 
 virtualenv/
-
+venv/
 
 #Folders
 
