@@ -4,3 +4,6 @@
 Si marca un error DJANGO_SETTINGS_MODULE hay que ejecutar el siguiente comando:
 
 	export DJANGO_SETTINGS_MODULE=superlists.settings
+
+Para poner marcas en git:
+	git tag 'end-of-chapter-05' 
