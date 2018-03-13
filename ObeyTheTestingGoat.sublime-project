@@ -14,5 +14,5 @@
 			"path": "."
 		}
 	],
-	"virtualenv": "/home/raultr/Cursos/TddWithPython2ed/virtualenv"
+	"virtualenv": "/home/raultr/Cursos/TddWithPython2ed/venv"
 }
