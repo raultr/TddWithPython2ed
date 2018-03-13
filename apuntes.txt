@@ -7,3 +7,6 @@ Si marca un error DJANGO_SETTINGS_MODULE hay que ejecutar el siguiente comando:
 
 Para poner marcas en git:
 	git tag 'end-of-chapter-05' 
+
+Establecer la variable de desarrollo:
+	STAGING_SERVER=superlists-staging.ottg.eu

@@ -12,9 +12,10 @@ geckodriver.exe
 # Environments
 
 virtualenv/
-
+venv/
 
 #Folders
 
 *.sublime-workspace
 /static
+.env
