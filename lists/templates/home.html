@@ -3,9 +3,3 @@
 {% block header_text %}Start a new To-Do list{% endblock %}
 
 {% block form_action %}/lists/new{% endblock %}
-
-# Para correr un test en otro ambiente
-STAGING_SERVER=staging.raultr.info python manage.py test functional_tests
-
-# windows
-set STAGING_SERVER=staging.raultr.info python manage.py test functional_tests
