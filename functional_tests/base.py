@@ -13,7 +13,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         staging_server = os.environ.get('STAGING_SERVER')
         if staging_server:
             self.live_server_url = 'http://' + staging_server
-        #self.assertEqual(self.live_server_url, "")
+        # self.assertEqual(self.live_server_url, "")
 
     def tearDown(self):
         self.browser.refresh()
@@ -23,8 +23,8 @@ class FunctionalTest(StaticLiveServerTestCase):
         start_time = time.time()
         while True:
             try:
-                table = self.browser.find_element_by_id('id_list_table')
-                rows = table.find_elements_by_tag_name('tr')
+                table=self.browser.find_element_by_id('id_list_table')
+                rows=table.find_elements_by_tag_name('tr')
                 self.assertIn(row_text, [row.text for row in rows])
                 # table = self.browser.find_element_by_id('id_nothing')
                 # rows = table.find_elements_by_tag_name('tr')
@@ -36,7 +36,7 @@ class FunctionalTest(StaticLiveServerTestCase):
                 time.sleep(0.5)
 
     def wait_for(self, fn):
-        start_time = time.time()
+        start_time=time.time()
         while True:
             try:
                 return fn()
@@ -44,3 +44,6 @@ class FunctionalTest(StaticLiveServerTestCase):
                 if time.time() - start_time > MAX_WAIT:
                     raise e
                 time.sleep(0.5)
+
+    def get_item_input_box(self):
+        return self.browser.find_element_by_id('id_text')
