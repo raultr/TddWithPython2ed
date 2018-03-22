@@ -1,7 +1,15 @@
 from django.utils.html import escape
 from django.test import TestCase
 from lists.models import Item, List
+from lists.forms import ItemForm
 
+
+
+class HomePageTest(TestCase):
+
+    def test_home_page_uses_item_form(self):
+        response = self.client.get('/')
+        self.assertIsInstance(response.context['form'], ItemForm)
 
 class ListAndItemModelsTest(TestCase):
 
