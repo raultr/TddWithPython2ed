@@ -19,3 +19,6 @@ set STAGING_SERVER=staging.raultr.info python manage.py test functional_tests
 
 # Especificando un puerto
 set STAGING_SERVER=staging.raultr.info:8000
+
+# Variable password
+ export EMAIL_PASSWORD="sekrit"

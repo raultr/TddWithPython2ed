@@ -30,7 +30,19 @@ else:
     SECRET_KEY = '7v@izy+79)o%i@b)-fda@(2t)r*%x$egcfw7i3=g^bx_1_q#m^'
     ALLOWED_HOSTS = []
 
+#EMAIL_USE_TLS = True
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'redgranatum@gmail.com'
+#EMAIL_HOST_PASSWORD = 'mayonesa123' #os.environ.get('EMAIL_PASSWORD')
+#EMAIL_PORT = 587
 
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = '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'
+# EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# SENDGRID_API_KEY= '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'
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,7 +53,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "lists",
+    'accounts',
 ]
+
+AUTH_USER_MODEL = 'accounts.ListUser'
+AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.PasswordlessAuthenticationBackend',
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
