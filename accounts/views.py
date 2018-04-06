@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.contrib import auth, messages
@@ -27,7 +28,8 @@ def send_login_email(request):
     return redirect('/')
 
 def send_mail(link, message_body, fromemail, toemail):
-    sg = sendgrid.SendGridAPIClient(apikey='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')
+    import ipdb;ipdb.set_trace()
+    sg = sendgrid.SendGridAPIClient(apikey=  os.environ.get('DJANGO_MAIL_KEY'))
 
     from_email = Email(fromemail)
     to_email = Email(toemail)
