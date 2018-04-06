@@ -31,6 +31,9 @@ else:
     ALLOWED_HOSTS = []
 
 
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,7 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "lists",
+    'lists',
+    'accounts',
+]
+
+
+AUTH_USER_MODEL = 'accounts.User'
+
+AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.PasswordlessAuthenticationBackend',
 ]
 
 MIDDLEWARE = [
