@@ -28,7 +28,7 @@ def send_login_email(request):
     return redirect('/')
 
 def send_mail(link, message_body, fromemail, toemail):
-    import ipdb;ipdb.set_trace()
+    #import ipdb;ipdb.set_trace()
     sg = sendgrid.SendGridAPIClient(apikey=  os.environ.get('DJANGO_MAIL_KEY'))
 
     from_email = Email(fromemail)
